@@ -1,0 +1,24 @@
+spring:
+  # admin 配置
+  boot:
+    admin:
+      client:
+        instance:
+          management-base-url: http://localhost:8000
+
+knife4j:
+  enable: true
+  setting:
+    enableDynamicParameter: true
+
+swagger:
+  enabled: true
+  title: 系统权限服务
+  base-package: indi.yuluo.auth
+  version: V2023.5.15
+  description: 系统权限管理
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: http://${spring.cloud.nacos.discovery.ip}:${server.port}/doc.html
+  author: yuluo
+  contact: yuluo829@aliyun.com

@@ -1,0 +1,48 @@
+spring:
+
+  # 微服务配置
+  cloud:
+
+    # Nacos 配置
+    nacos:
+      # 服务发现
+      discovery:
+        # 服务注册地址
+        server-addr: 127.0.0.1:8848
+        # 命名空间
+        namespace: 0faa1b71-ce85-4de9-9f28-63fdc7f8ae0e
+
+      # 服务配置
+      config:
+        # 配置中心地址
+        server-addr: 127.0.0.1:8848
+        # 配置文件格式
+        file-extension: yaml
+        # 共享配置 存放redis、mysql、mongodb连接配置
+        shared-configs:
+          - data-id: yuluo-microservices-common-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+        namespace: 0faa1b71-ce85-4de9-9f28-63fdc7f8ae0e
+
+    sentinel:
+      # 取消控制台懒加载
+      eager: true
+      transport:
+        # 控制台地址
+        dashboard: 127.0.0.1:8718
+      # nacos 配置持久化
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: yuluo-microservice-sentinel-gateway
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: gw-flow
+
+  # 配置文件监听
+  config:
+    import:
+      - optional:nacos:yuluo-microservices-gateway.yml  # 监听 DEFAULT_GROUP:test.yml
+      - nacos:yuluo-microservices-gateway.yml # 在拉取nacos配置异常时会快速失败，会导致 spring 容器启动失败
+      # - optional:nacos:yuluo-microservices-gateway.yml?group=group_01 # 覆盖默认 group，监听 group_01:test01.yml
+      # - optional:nacos:yuluo-microservices-gateway.yml?group=group_02&refreshEnabled=false # 不开启动态刷新

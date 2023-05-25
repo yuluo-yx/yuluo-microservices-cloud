@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>indi.yuluo</groupId>
+	<artifactId>yuluo-microservices-parent</artifactId>
+	<version>2023.5.15</version>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>yuluo-microservices-common</module>
+		<module>yuluo-microservices-services</module>
+		<module>yuluo-microservices-gateway</module>
+		<module>yuluo-microservices-auth</module>
+		<module>yuluo-microservices-data</module>
+		<module>yuluo-microsevices-visual</module>
+	</modules>
+
+	<properties>
+		<!--项目管理-->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!--统一依赖配置-->
+		<spring.cloud.version>2022.0.0</spring.cloud.version>
+		<spring.cloud.alibaba.version>2022.0.0.0-RC1</spring.cloud.alibaba.version>
+		<spring.boot.version>3.0.2</spring.boot.version>
+
+		<!--组件版本-->
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Spring Cloud 微服务 -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring.cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- Spring Cloud Alibaba 微服务 -->
+			<dependency>
+				<groupId>com.alibaba.cloud</groupId>
+				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
+				<version>${spring.cloud.alibaba.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- Spring Boot 依赖配置 -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${spring.boot.version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>repackage</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>aliyunmaven</id>
+			<name>aliyun</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>public</id>
+			<name>aliyun nexus</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>

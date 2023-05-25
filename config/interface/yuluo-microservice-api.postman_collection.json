@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "05ded083-16ea-4e84-b57c-2660d9e94844",
+		"name": "yuluo-microservice-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25292732"
+	},
+	"item": [
+		{
+			"name": "system-service-api",
+			"item": [
+				{
+					"name": "服务测试：获取用户信息",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/test/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"test",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：拉取 Nacos 配置信息",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/test/nacos/config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"test",
+								"nacos",
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：数据脱敏",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/test/testSensitive",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"test",
+								"testSensitive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：发送邮件验证码",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/email/getEmailCode/951448078@qq.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"email",
+								"getEmailCode",
+								"951448078@qq.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：校验邮箱验证码",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/email/checkEmailCode/951448078@qq.com/2373",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"email",
+								"checkEmailCode",
+								"951448078@qq.com",
+								"2373"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：测试P6Spy SQL监控",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9001/user/getUserInfoByUsername/yuluo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"user",
+								"getUserInfoByUsername",
+								"yuluo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：获取用户信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyUm9sZXMiOnsiY3JlYXRlVGltZSI6bnVsbCwidXBkYXRlVGltZSI6bnVsbCwicm9sZUlkIjoxMjM0NTYsInJvbGVOYW1lIjoiYWRtaW4iLCJyb2xlS2V5Ijoic3lzdGVtOjphZG1pbiIsInJvbGVTb3J0IjoxLCJzdGF0dXMiOiIwIiwiZGVsRmxhZyI6IjAiLCJmbGFnIjpmYWxzZSwicGVybWlzc2lvbnMiOm51bGwsImFkbWluIjpmYWxzZX0sInVzZXJpZCI6MSwidXNlcm5hbWUiOiJ5dWx1byIsInN1YiI6Inl1bHVvIiwiaWF0IjoxNjg0NjYwMzE1LCJleHAiOjE2ODQ2NjE3NTV9.kEj8i3c60CRDkQP_sB1XtvyluLWKKrJdL88uDbzYcnU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/sys/test/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"sys",
+								"test",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：拉取 Nacos 配置",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/sys/test/nacos/config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"sys",
+								"test",
+								"nacos",
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：发送邮件验证码",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/sys/email/getEmailCode/780879337@qq.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"sys",
+								"email",
+								"getEmailCode",
+								"780879337@qq.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：校验邮箱验证码",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/sys/email/checkEmailCode/780879337@qq.com/2373",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"sys",
+								"email",
+								"checkEmailCode",
+								"780879337@qq.com",
+								"2373"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：测试更新权限并写入操作日志",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyUm9sZXMiOnsiY3JlYXRlVGltZSI6bnVsbCwidXBkYXRlVGltZSI6bnVsbCwicm9sZUlkIjoxMjM0NTYsInJvbGVOYW1lIjoiYWRtaW4iLCJyb2xlS2V5Ijoic3lzdGVtOjphZG1pbiIsInJvbGVTb3J0IjoxLCJzdGF0dXMiOiIwIiwiZGVsRmxhZyI6IjAiLCJmbGFnIjpmYWxzZSwicGVybWlzc2lvbnMiOm51bGwsImFkbWluIjpmYWxzZX0sInVzZXJpZCI6MSwidXNlcm5hbWUiOiJ5dWx1byIsInN1YiI6Inl1bHVvIiwiaWF0IjoxNjg0ODQ0MjY5LCJleHAiOjE2ODQ4NDU3MDl9.qHZk1-OtZNOQXxvqHSAbZ1Vdw2cJ3lxTfWY0JhEe83k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/sys/role/updateTest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"sys",
+								"role",
+								"updateTest"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway-api",
+			"item": [
+				{
+					"name": "获取验证码",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/code",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"code"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth-api",
+			"item": [
+				{
+					"name": "服务测试：login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"yuluo\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9281/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9281",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9281/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9281",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：logout",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9281/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9281",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务测试：test-request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9281/auth/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9281",
+							"path": [
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"yuluo\",\r\n    \"password\":\"123456\",\r\n    \"code\":\"0\",\r\n    \"uuid\":\"3558ffb5d5c3411e96f319f3fd38ce37\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9280/token/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"token",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：register",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/token/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"token",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "网关测试：test-request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyUm9sZXMiOnsiY3JlYXRlVGltZSI6bnVsbCwidXBkYXRlVGltZSI6bnVsbCwicm9sZUlkIjoxMjM0NTYsInJvbGVOYW1lIjoiYWRtaW4iLCJyb2xlS2V5Ijoic3lzdGVtOjphZG1pbiIsInJvbGVTb3J0IjoxLCJzdGF0dXMiOiIwIiwiZGVsRmxhZyI6IjAiLCJmbGFnIjpmYWxzZSwicGVybWlzc2lvbnMiOm51bGwsImFkbWluIjpmYWxzZX0sInVzZXJpZCI6MSwidXNlcm5hbWUiOiJ5dWx1byIsInN1YiI6Inl1bHVvIiwiaWF0IjoxNjg0ODEyOTUwLCJleHAiOjE2ODQ4MTQzOTB9.70Jb-rWiTAgSFPpmYA1JewJMiIAY1bR5SOT0uQDmaLc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9280/token/auth/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9280",
+							"path": [
+								"token",
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin 监控",
+			"item": [
+				{
+					"name": "监控请求测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

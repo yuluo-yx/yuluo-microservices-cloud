@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>indi.yuluo</groupId>
+		<artifactId>yuluo-microservices-common</artifactId>
+		<version>2023.5.15</version>
+	</parent>
+
+	<artifactId>yuluo-microservices-common-redis</artifactId>
+
+	<properties>
+
+		<!--项目管理-->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- 依赖管理 -->
+		<reversion>2023.5.15</reversion>
+
+	</properties>
+
+	<dependencies>
+
+		<!-- Spring Boot Redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- Yuluo microservices common core -->
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-core</artifactId>
+			<version>${reversion}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,111 @@
+spring:
+
+  # admin 配置
+  boot:
+    admin:
+      client:
+        instance:
+          management-base-url: http://localhost:8000
+
+  cloud:
+
+    # 网关配置
+    gateway:
+      discovery:
+        locator:
+          enabled: false # 开启从注册中心动态创建路由的功能，利用微服务名进行路由 此时自己配置的过滤器路由规则不生效
+          lower-case-service-id: true #使用小写服务名，默认是大写
+
+      routes:
+        # 路由ID，保持唯一
+        - id: system-service
+          # 目标服务地址
+          uri: lb://yuluo-module-system-service
+          # 断言（路由条件）
+          predicates:
+            - Path=/sys/**
+          # 过滤器
+          filters:
+            # 截去路径中的/sys，剩余部分和uri的值拼接作为转发地址，数字代表要截去的位数
+            - StripPrefix=1
+
+        - id: system-auth
+          uri: lb://yuluo-microservices-auth
+          predicates:
+            - Path=/token/**
+          filters:
+            - CacheRequestFilter
+            - ValidateCodeFilter
+            - StripPrefix=1
+
+    # sentinel 降级响应配置
+    sentinel:
+      scg:
+        fallback:
+          ## 两种模式，一种是response返回文字提示信息，
+          ## 一种是redirect，重定向跳转，需要同时配置redirect(跳转的uri)
+          mode: response
+          ## 响应的状态
+          response-status: 200
+          ## 响应体
+          response-body: '{"code": 200,"message": "请求失败，稍后重试！"}'
+
+    loadbalancer:
+      cache:
+        # 开启缓存，如果注册中心有自己的缓存，那么就可以禁用loadbalancer的缓存
+        enabled: false
+
+# 安全配置
+security:
+  # 验证码
+  captcha:
+    # 是否开启验证码
+    enabled: true
+    # 验证码类型 math 数组计算 char 字符验证
+    type: math
+    # line 线段干扰 circle 圆圈干扰 shear 扭曲干扰
+    category: CIRCLE
+    # 数字验证码位数
+    numberLength: 1
+    # 字符验证码长度
+    charLength: 4
+
+  # 防止XSS攻击
+  xss:
+    enabled: true
+    excludeUrls:
+      - /system/notice
+
+  # 不校验白名单
+  ignore:
+    whites:
+      - /code
+      - /token/auth/logout
+      - /token/auth/login
+      - /token/auth/register
+      - /sys/email/getEmailCode/**
+      - /sys/email/checkEmailCode/**
+
+      # 文档接口 线上要屏蔽掉
+      - "/doc.html"
+      - "/webjars/*"
+      - "/swagger-resources"
+      - "/v2/api-docs"
+
+# 文档配置
+knife4j:
+  enable: true
+  setting:
+    enableDynamicParameter: true
+
+swagger:
+  enabled: true
+  title: 网关服务
+  base-package: indi.yuluo.gateway
+  version: V2023.5.15
+  description: 网关服务管理
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: http://${spring.cloud.nacos.discovery.ip}:${server.port}/doc.html
+  author: yuluo
+  contact: yuluo829@aliyun.com

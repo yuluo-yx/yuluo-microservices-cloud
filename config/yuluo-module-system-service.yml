@@ -1,0 +1,50 @@
+spring:
+
+  # admin 配置
+  boot:
+    admin:
+      client:
+        instance:
+          management-base-url: http://localhost:8000
+
+  # 模板配置
+  thymeleaf:
+    prefix: classpath:/template/  #prefix：指定模板所在的目录
+    check-template-location: true  #check-template-location: 检查模板路径是否存在
+    cache: true  #cache: 是否缓存，开发模式下设置为false，避免改了模板还要重启服务器，线上设置为true，可以提高性能。
+    suffix: .html
+    #encoding: UTF-8
+    #content-type: text/html
+    mode: HTML
+
+management:
+  tracing:
+    enabled: true
+    sampling.probability: 1.0
+
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+logging:
+  pattern:
+    level: "trace_id=%mdc{traceId} span_id=%mdc{spanId} trace_flags=%mdc{traceFlags} %p"
+
+
+# 文档配置
+knife4j:
+  enable: true
+  setting:
+    enableDynamicParameter: true
+
+swagger:
+  enabled: true
+  title: 系统服务
+  base-package: indi.yuluo.system
+  version: V2023.5.15
+  description: 系统服务管理
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: http://${spring.cloud.nacos.discovery.ip}:${server.port}/doc.html
+  author: yuluo
+  contact: yuluo829@aliyun.com

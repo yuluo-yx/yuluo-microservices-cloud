@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>indi.yuluo</groupId>
+		<artifactId>yuluo-microservices-services</artifactId>
+		<version>2023.5.15</version>
+	</parent>
+
+	<artifactId>yuluo-module-system-service</artifactId>
+	<description> yuluo module system service </description>
+
+	<properties>
+
+		<!--项目管理-->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- 依赖管理 -->
+		<reversion>2023.5.15</reversion>
+		<spring.cloud.sleuth.version>3.1.8</spring.cloud.sleuth.version>
+
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-domain</artifactId>
+			<version>${reversion}</version>
+			<!-- 排除 Spring Security -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-security</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Mybatis-plus -->
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-data-mybatis</artifactId>
+			<version>${reversion}</version>
+		</dependency>
+
+		<!-- Yuluo Microservice Common Log -->
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-log</artifactId>
+			<version>${reversion}</version>
+		</dependency>
+
+		<!-- Spring Boot3 使用 micrometer-tracing 代替 Spring Cloud Sleuth-->
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing-bridge-brave</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.zipkin.reporter2</groupId>
+			<artifactId>zipkin-reporter-brave</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-mail</artifactId>
+			<version>${reversion}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-security</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-redis</artifactId>
+			<version>${reversion}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-security</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

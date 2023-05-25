@@ -1,0 +1,73 @@
+server:
+  # undertow 配置
+  undertow:
+    # HTTP post内容的最大大小。当值为-1时，默认值为大小是无限的
+    max-http-post-size: -1
+    # 以下的配置会影响buffer,这些buffer会用于服务器连接的IO操作,有点类似netty的池化内存管理
+    # 每块buffer的空间大小,越小的空间被利用越充分
+    buffer-size: 512
+    # 是否分配的直接内存
+    direct-buffers: true
+    threads:
+      # 设置IO线程数, 它主要执行非阻塞的任务,它们会负责多个连接, 默认设置每个CPU核心一个线程
+      io: 8
+      # 阻塞任务线程池, 当执行类似servlet请求阻塞操作, undertow会从这个线程池中取得线程,它的值设置取决于系统的负载
+      worker: 256
+
+spring:
+
+  # Admin 监控配置
+  boot:
+    admin:
+      client:
+        # admin server 地址
+        url: http://192.168.3.19:8000
+
+  # 资源信息
+  servlet:
+    multipart:
+      # 整个请求大小限制
+      max-request-size: 20MB
+      # 上传单个文件大小限制
+      max-file-size: 10MB
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+
+  # MySQL 数据库配置
+  datasource:
+    # 替换数据库驱动为 p6spy 驱动，监控sql
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    username: 'root'
+    password: '00000'
+    # url: jdbc:mysql://127.0.0.1:3306/yuluo-microservices?useSSL=false&serverTimezone=UTC
+    url: jdbc:p6spy:mysql://127.0.0.1:3306/yuluo-microservices?useSSL=false&serverTimezone=UTC
+
+  data:
+    # redis 配置
+    redis:
+      port: 6379
+      host: 127.0.0.1
+      password: '00000'
+      timeout: 5000
+      database: 12
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+    logfile:
+      external-file: ./logs/${spring.application.name}/console.log
+
+# 日志配置
+logging:
+  level:
+    org.springframework: warn
+    com.alibaba.nacos: warn
+  config: classpath:logback.xml

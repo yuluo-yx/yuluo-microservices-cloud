@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="indi.yuluo.auth.module.CurrentUser">
+	<select id="selectOne" parameterType="java.lang.String" resultType="indi.yuluo.auth.module.CurrentUser">
+		SELECT DISTINCT
+			u.user_id,
+			u.PASSWORD,
+			u.user_name,
+			u.nick_name,
+			u.email,
+			u.phonenumber,
+			u.role_id,
+			u.sex,
+			u.avatar,
+			u.login_ip,
+			u.login_date,
+			u.STATUS,
+			u.create_time,
+			u.update_time,
+			r.role_name,
+			r.role_key,
+			r.role_sort
+		FROM
+			sys_user AS u
+				INNER JOIN sys_role AS r ON u.role_id = r.role_id
+		WHERE
+			u.del_flag = '0'
+		  AND u.user_name = #{username}
+		  AND u.STATUS = '0'
+		  AND r.del_flag = '0'
+		  AND r.STATUS = '0'
+	</select>
+</mapper>

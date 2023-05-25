@@ -1,0 +1,6 @@
+indi.yuluo.module.system.api.factory.RemoteSysRoleFallbackFactory
+indi.yuluo.module.system.api.factory.RemoteSysUserFallbackFactory
+indi.yuluo.module.system.api.factory.RemoteSysOperLogFallbackFactory
+indi.yuluo.module.system.api.factory.RemoteSysUserTestFallbackFactory
+indi.yuluo.module.system.api.factory.RemoteSysLoginInfoFallbackFactory
+indi.yuluo.module.system.api.factory.RemoteSysEmailFallbackFactory

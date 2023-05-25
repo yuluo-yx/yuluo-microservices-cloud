@@ -1,0 +1,13 @@
+server:
+  port: 9281
+
+spring:
+  application:
+    name: yuluo-microservices-auth
+
+  profiles:
+    active: dev
+
+#logging:
+#  level:
+#    root: debug
