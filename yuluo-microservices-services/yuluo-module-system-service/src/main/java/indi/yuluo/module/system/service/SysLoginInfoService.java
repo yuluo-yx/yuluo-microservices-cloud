@@ -37,4 +37,9 @@ public interface SysLoginInfoService extends IService<SysLoginInfo> {
 	 * @param sysLoginInfo 信息实体
 	 */
 	void saveLoginInfo(SysLoginInfo sysLoginInfo);
+
+	/**
+	 * 导出系统访问记录列表
+	 */
+	List<SysLoginInfo> selectLogininforList();
 }

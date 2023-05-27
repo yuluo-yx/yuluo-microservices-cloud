@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Map;
 
 import indi.yuluo.common.domain.system.SysLoginInfo;
+import indi.yuluo.common.excel.util.ExcelUtils;
 import indi.yuluo.common.log.annotation.Log;
 import indi.yuluo.common.log.enums.BusinessType;
 import indi.yuluo.common.result.Result;
 import indi.yuluo.module.system.service.SysLoginInfoService;
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -72,6 +74,19 @@ public class SysLoginInfoController {
 	public void saveLoginInfo(@RequestBody SysLoginInfo sysLoginInfo) {
 
 		loginInfoService.saveLoginInfo(sysLoginInfo);
+	}
+
+
+	/**
+	 * 导出系统访问记录列表
+	 */
+	@Log(title = "导出系统访问日志", businessType = BusinessType.EXPORT)
+	@PostMapping("/export")
+	public void export(HttpServletResponse response) {
+
+		List<SysLoginInfo> list = loginInfoService.selectLogininforList();
+
+		ExcelUtils.exportExcel(list, "系统访问日志", SysLoginInfo.class, response);
 	}
 
 }

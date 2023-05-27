@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Map;
 
 import indi.yuluo.common.domain.system.SysOperLog;
+import indi.yuluo.common.excel.util.ExcelUtils;
 import indi.yuluo.common.log.annotation.Log;
 import indi.yuluo.common.log.enums.BusinessType;
 import indi.yuluo.common.result.Result;
 import indi.yuluo.module.system.service.SysOperLogService;
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -34,7 +36,7 @@ public class SysOperLogController {
 
 	/**
 	 * 获取系统日志
-	 * @return Map<String, List<SysOperLog>>
+	 * @return Map<String, List < SysOperLog>>
 	 */
 	@GetMapping("/getOperLog")
 	public Result<Map<String, List<SysOperLog>>> getOperLog() {
@@ -61,6 +63,17 @@ public class SysOperLogController {
 	public Result<Boolean> saveOperLog(@RequestBody SysOperLog sysOperLog) {
 
 		return Result.success(operLogService.saveOperLog(sysOperLog));
+	}
+
+	/**
+	 * 导出操作日志记录列表
+	 */
+	@Log(title = "导出系统操作日志", businessType = BusinessType.EXPORT)
+	@PostMapping("/export")
+	public void export(HttpServletResponse response) {
+
+		List<SysOperLog> list = operLogService.selectOperLogList();
+		ExcelUtils.exportExcel(list, "操作日志", SysOperLog.class, response);
 	}
 
 }

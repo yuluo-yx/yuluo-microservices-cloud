@@ -1,0 +1,36 @@
+10:38:12.117 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarting,51] - Starting YuluoMicroServiceVisualApplication using Java 18.0.2.1 with PID 13656 (E:\Java\yuluo-microservices-parent\yuluo-microsevices-visual\target\classes started by 14815 in E:\Java\yuluo-microservices-parent)
+10:38:12.120 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStartupProfileInfo,630] - No active profile set, falling back to 1 default profile: "default"
+10:38:13.245 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8000"]
+10:38:13.246 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:38:13.246 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+10:38:13.315 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:38:14.163 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8000"]
+10:38:14.183 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarted,57] - Started YuluoMicroServiceVisualApplication in 2.711 seconds (process running for 4.188)
+10:38:14.648 [RMI TCP Connection(2)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:08:13.489 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarting,51] - Starting YuluoMicroServiceVisualApplication using Java 18.0.2.1 with PID 24252 (E:\Java\yuluo-microservices-parent\yuluo-microsevices-visual\target\classes started by 14815 in E:\Java\yuluo-microservices-parent)
+11:08:13.496 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStartupProfileInfo,630] - No active profile set, falling back to 1 default profile: "default"
+11:08:15.203 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8000"]
+11:08:15.204 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:08:15.204 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+11:08:15.297 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:08:16.523 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8000"]
+11:08:16.552 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarted,57] - Started YuluoMicroServiceVisualApplication in 3.788 seconds (process running for 5.002)
+11:08:16.905 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:09:10.918 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarting,51] - Starting YuluoMicroServiceVisualApplication using Java 18.0.2.1 with PID 22520 (E:\Java\yuluo-microservices-parent\yuluo-microsevices-visual\target\classes started by 14815 in E:\Java\yuluo-microservices-parent)
+11:09:10.922 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStartupProfileInfo,630] - No active profile set, falling back to 1 default profile: "default"
+11:09:12.491 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8000"]
+11:09:12.492 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:09:12.493 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+11:09:12.608 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:09:14.324 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8000"]
+11:09:14.371 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarted,57] - Started YuluoMicroServiceVisualApplication in 4.024 seconds (process running for 5.203)
+11:09:14.850 [RMI TCP Connection(5)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:45:51.369 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarting,51] - Starting YuluoMicroServiceVisualApplication using Java 18.0.2.1 with PID 24068 (E:\Java\yuluo-microservices-parent\yuluo-microsevices-visual\target\classes started by 14815 in E:\Java\yuluo-microservices-parent)
+11:45:51.374 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStartupProfileInfo,630] - No active profile set, falling back to 1 default profile: "default"
+11:45:52.990 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8000"]
+11:45:52.991 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:45:52.991 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+11:45:53.081 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:45:54.631 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8000"]
+11:45:54.663 [main] INFO  i.y.v.YuluoMicroServiceVisualApplication - [logStarted,57] - Started YuluoMicroServiceVisualApplication in 3.942 seconds (process running for 5.248)
+11:45:55.014 [RMI TCP Connection(2)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

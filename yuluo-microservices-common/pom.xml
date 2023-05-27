@@ -20,6 +20,7 @@
 		<module>yuluo-microservices-common-log</module>
 		<module>yuluo-microservices-common-domain</module>
 		<module>yuluo-microservices-common-TTL</module>
+		<module>yuluo-microservices-common-excel</module>
 	</modules>
 
 	<properties>

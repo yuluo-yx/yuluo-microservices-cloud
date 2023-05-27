@@ -32,4 +32,9 @@ public interface SysOperLogService extends IService<SysOperLog> {
 	 * @return 插入标记
 	 */
 	Boolean saveOperLog(SysOperLog sysOperLog);
+
+	/**
+	 * 导出操作日志记录列表
+	 */
+	List<SysOperLog> selectOperLogList();
 }

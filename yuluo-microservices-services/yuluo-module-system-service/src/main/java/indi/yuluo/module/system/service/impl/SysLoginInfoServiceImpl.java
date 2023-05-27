@@ -7,6 +7,7 @@ import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import indi.yuluo.common.domain.system.SysLoginInfo;
+import indi.yuluo.common.utils.StringUtils;
 import indi.yuluo.module.system.mapper.SysLoginInfoMapper;
 import indi.yuluo.module.system.service.SysLoginInfoService;
 
@@ -74,5 +75,17 @@ public class SysLoginInfoServiceImpl extends ServiceImpl<SysLoginInfoMapper, Sys
 	public void saveLoginInfo(SysLoginInfo sysLoginInfo) {
 
 		this.save(sysLoginInfo);
+	}
+
+	/**
+	 * 查询系统登录日志集合
+	 *
+	 * @return 登录记录集合
+	 */
+	@Override
+	public List<SysLoginInfo> selectLogininforList() {
+
+		return baseMapper.selectList(new LambdaQueryWrapper<SysLoginInfo>()
+				.orderByDesc(SysLoginInfo::getInfoId));
 	}
 }

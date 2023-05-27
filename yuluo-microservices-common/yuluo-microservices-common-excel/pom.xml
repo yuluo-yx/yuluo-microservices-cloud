@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>indi.yuluo</groupId>
+		<artifactId>yuluo-microservices-common</artifactId>
+		<version>2023.5.15</version>
+	</parent>
+
+	<artifactId>yuluo-microservices-common-excel</artifactId>
+
+	<properties>
+
+		<!-- 项目管理 -->
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- 依赖管理 -->
+		<reversion>2023.5.15</reversion>
+		<easyexcel.version>3.2.1</easyexcel.version>
+
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-core</artifactId>
+			<version>${reversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
+			<version>${easyexcel.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

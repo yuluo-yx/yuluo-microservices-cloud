@@ -28,7 +28,7 @@
 
 		<dependency>
 			<groupId>indi.yuluo</groupId>
-			<artifactId>yuluo-microservices-common-core</artifactId>
+			<artifactId>yuluo-microservices-common-excel</artifactId>
 			<version>${reversion}</version>
 		</dependency>
 

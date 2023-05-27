@@ -53,6 +53,19 @@
 			<version>${reversion}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>indi.yuluo</groupId>
+			<artifactId>yuluo-microservices-common-excel</artifactId>
+			<version>${reversion}</version>
+			<!-- 排除 Spring Security -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-security</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
 		<!-- Spring Boot3 使用 micrometer-tracing 代替 Spring Cloud Sleuth-->
 		<dependency>
 			<groupId>io.micrometer</groupId>

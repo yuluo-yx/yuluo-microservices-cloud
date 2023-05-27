@@ -1,13 +1,16 @@
 package indi.yuluo.module.system.service.impl;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.hutool.core.util.ArrayUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import indi.yuluo.common.domain.system.SysLoginInfo;
 import indi.yuluo.common.domain.system.SysOperLog;
+import indi.yuluo.common.utils.StringUtils;
 import indi.yuluo.module.system.mapper.SysOperLogMapper;
 import indi.yuluo.module.system.service.SysOperLogService;
 
@@ -24,7 +27,7 @@ public class SysOperLogServiceImpl extends ServiceImpl<SysOperLogMapper, SysOper
 
 	/**
 	 * 获取系统日志
-	 * @return Map<String, List<SysOperLog>>
+	 * @return Map<String, List < SysOperLog>>
 	 */
 	@Override
 	public Map<String, List<SysOperLog>> getOperLog() {
@@ -60,5 +63,17 @@ public class SysOperLogServiceImpl extends ServiceImpl<SysOperLogMapper, SysOper
 	public Boolean saveOperLog(SysOperLog sysOperLog) {
 
 		return this.save(sysOperLog);
+	}
+
+	/**
+	 * 查询系统操作日志集合
+	 *
+	 * @return 操作日志集合
+	 */
+	@Override
+	public List<SysOperLog> selectOperLogList() {
+
+		return baseMapper.selectList(new LambdaQueryWrapper<SysOperLog>()
+				.orderByDesc(SysOperLog::getOperId));
 	}
 }

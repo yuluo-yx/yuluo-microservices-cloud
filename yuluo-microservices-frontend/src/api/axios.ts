@@ -40,18 +40,32 @@ export function put(url: string, data: any) {
     });
 }
 
+// export function download(url: string, params: any) {
+//     return new Promise((resolve, reject) => {
+//         service.get(url, {
+//             params: params,
+//             // headers: axios.defaults.headers
+//             responseType: 'blob'
+//         }).then(res => {
+//             resolve(res.data);
+//         }).catch(err => {
+//             reject(err.data);
+//         });
+//     });
+// }
+
+// 通用下载方法
 export function download(url: string, params: any) {
     return new Promise((resolve, reject) => {
-        service.get(url, {
+        service.post(url, params, {
             params: params,
-            // headers: axios.defaults.headers
-            responseType: 'blob'
+            responseType: 'blob',
         }).then(res => {
             resolve(res.data);
         }).catch(err => {
             reject(err.data);
         });
-    });
+    })
 }
 
 export function post(url: string, params: any) {

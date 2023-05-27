@@ -3,7 +3,11 @@ package indi.yuluo.common.domain.system;
 import java.io.Serial;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
+import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
+import com.alibaba.excel.annotation.ExcelProperty;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -16,6 +20,7 @@ import indi.yuluo.common.domain.base.BaseEntity;
  * @description: 操作日志记录表 oper_log
  */
 
+@ExcelIgnoreUnannotated
 @TableName("sys_oper_log")
 public class SysOperLog extends BaseEntity {
 
@@ -24,12 +29,15 @@ public class SysOperLog extends BaseEntity {
 
 	/** 日志主键 */
 	@TableId(value = "oper_id")
+	@ExcelProperty(value = "日志主键")
 	private Long operId;
 
 	/** 操作模块 */
+	@ExcelProperty(value = "操作模块")
 	private String title;
 
 	/** 业务类型（0其它 1新增 2修改 3删除） */
+	@ExcelProperty(value = "业务类型")
 	private Integer businessType;
 
 	/** 业务类型数组 */
@@ -37,41 +45,70 @@ public class SysOperLog extends BaseEntity {
 	private Integer[] businessTypes;
 
 	/** 请求方法 */
+	@ExcelProperty(value = "请求方法")
 	private String method;
 
 	/** 请求方式 */
+	@ExcelProperty(value = "请求方式")
 	private String requestMethod;
 
 	/** 操作类别（0其它 1后台用户 2手机端用户） */
+	@ExcelProperty(value = "操作类别")
 	private Integer operatorType;
 
 	/** 操作人员 */
+	@ExcelProperty(value = "操作人员")
 	private String operName;
 
 	/** 请求url */
+	@ExcelProperty(value = "请求地址")
 	private String operUrl;
 
 	/** 操作地址 */
+	@ExcelProperty(value = "操作地址")
 	private String operIp;
 
 	/** 请求参数 */
+	@ExcelProperty(value = "请求参数")
 	private String operParam;
 
 	/** 返回参数 */
+	@ExcelProperty(value = "返回参数")
 	private String jsonResult;
 
 	/** 操作状态（0正常 1异常） */
+	@ExcelProperty(value = "状态")
 	private Integer status;
 
 	/** 错误消息 */
+	@ExcelProperty(value = "错误消息")
 	private String errorMsg;
 
-	/** 操作时间 */
+	/**
+	 * 操作时间
+	 * 注意：EasyExcel不支持 LocalDateTime 类型，需要自己实现Converter接口
+	 * */
+	@ExcelProperty(value = "操作时间")
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date operTime;
 
 	/** 消耗时间 */
+	@ExcelProperty(value = "操作消耗时间")
 	private Long costTime;
+
+	/**
+	 * 请求参数
+	 */
+	@TableField(exist = false)
+	private Map<String, Object> params = new HashMap<>();
+
+	public Map<String, Object> getParams() {
+		return params;
+	}
+
+	public void setParams(Map<String, Object> params) {
+		this.params = params;
+	}
 
 	public Long getOperId() {
 		return operId;
