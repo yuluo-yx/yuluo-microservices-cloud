@@ -1,0 +1,55 @@
+version: '3.3'
+
+services:
+
+  yuluo-microservice-nacos-server:
+    image: nacos/nacos-server:v2.1.0
+    restart: always
+    container_name: ${DOCKER_PREFIX}-nacos-server
+    env_file:
+      - .env
+    environment:
+      - MODE=standalone
+    volumes:
+      - ./logs/:/home/nacos/logs
+      - ./nacos/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - ${NACOS_PORT}:${NACOS_PORT}
+      - ${NACOS_GRPC_PORT}:${NACOS_GRPC_PORT}
+
+  yuluo-microservice-portainer:
+    image: portainer/portainer-ce:latest
+    container_name: ${DOCKER_PREFIX}-portainer
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer/data:/data
+    expose:
+      - ${PORTAINER_PORT}
+
+  yuluo-microservice-redis-server:
+    image: redis
+    container_name: ${DOCKER_PREFIX}-redis-server
+    restart: unless-stopped
+    volumes:
+      - ./redis/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis/data:/data
+    command: redis-server /usr/local/etc/redis/redis.conf
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
+
+  yuluo-microservice-mysql-server:
+    image: mysql
+    container_name: ${DOCKER_PREFIX}-mysql-server
+    restart: unless-stopped
+    command: --default-authentication-plugin=caching_sha2_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --explicit_defaults_for_timestamp=true --lower_case_table_names=1 --max_allowed_packet=128M;
+    ports:
+      - ${MYSQL_PORT}:${MYSQL_PORT}
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/conf/my.cnf:/etc/my.cnf:ro
+      - ./mysql/log:/var/log/mysql
+      - ./mysql/init.d:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}

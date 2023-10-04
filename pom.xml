@@ -16,7 +16,7 @@
 		<module>yuluo-microservices-gateway</module>
 		<module>yuluo-microservices-auth</module>
 		<module>yuluo-microservices-data</module>
-		<module>yuluo-microsevices-visual</module>
+		<module>yuluo-microservices-visual</module>
 	</modules>
 
 	<properties>
