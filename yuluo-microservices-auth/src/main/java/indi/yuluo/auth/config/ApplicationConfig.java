@@ -3,14 +3,11 @@ package indi.yuluo.auth.config;
 import java.util.Optional;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import indi.yuluo.auth.mapper.SysCurrentUserMapper;
 import indi.yuluo.auth.module.CurrentUser;
 import indi.yuluo.common.domain.system.SysRole;
-import indi.yuluo.common.domain.system.SysUser;
 import indi.yuluo.common.result.Result;
 import indi.yuluo.module.system.api.RemoteSysRoleService;
-import indi.yuluo.module.system.api.RemoteSysUserService;
 import jakarta.annotation.Resource;
 
 import org.springframework.context.annotation.Bean;

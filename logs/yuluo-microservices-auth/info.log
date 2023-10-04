@@ -1,186 +1,87 @@
-10:36:03.105 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-10:36:03.183 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:03.184 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:03.184 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-10:36:05.861 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-10:36:05.883 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:05.883 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:05.884 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-10:36:10.536 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-10:36:10.537 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-10:36:10.538 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-10:36:10.680 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-10:36:13.091 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-10:36:15.654 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-10:36:16.615 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9281"]
-10:36:16.615 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
-10:36:16.626 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9281"]
-10:36:16.628 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9281"]
-10:36:37.967 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-10:36:38.030 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:38.031 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:38.031 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-10:36:38.569 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-10:36:38.582 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:38.582 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:36:38.582 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-10:36:40.583 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-10:36:40.584 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-10:36:40.584 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-10:36:40.695 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-10:36:41.928 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-10:36:44.217 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-10:36:44.563 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-10:36:44.734 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 8.902 seconds (process running for 10.455)
-10:36:44.751 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-10:36:44.752 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-10:36:44.754 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-10:36:44.756 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-10:36:44.757 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-10:36:44.984 [RMI TCP Connection(3)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-10:36:45.009 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-10:36:45.247 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@36e57792
-10:36:45.258 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-10:38:15.049 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:06:24.804 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:06:24.808 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:06:24.973 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-11:06:24.977 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
-11:06:35.274 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:06:35.330 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:06:35.331 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:06:35.331 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:06:35.875 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:06:35.890 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:06:35.890 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:06:35.891 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:06:38.029 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-11:06:38.029 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:06:38.030 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:06:38.145 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-11:06:39.535 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-11:06:42.049 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-11:06:42.380 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-11:06:42.554 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 9.554 seconds (process running for 11.607)
-11:06:42.571 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-11:06:42.572 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-11:06:42.579 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:06:42.586 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-11:06:42.587 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-11:06:42.637 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:06:43.119 [RMI TCP Connection(3)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:06:43.143 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-11:06:43.334 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@182323cc
-11:06:43.345 [RMI TCP Connection(2)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-11:07:57.979 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:07:57.985 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:07:58.127 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-11:07:58.134 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
-11:08:05.606 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:08:05.709 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:05.710 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:05.711 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:08:06.593 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:08:06.610 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:06.611 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:06.611 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:08:10.061 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-11:08:10.062 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:08:10.062 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:08:10.192 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-11:08:12.476 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-11:08:16.147 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-11:08:16.534 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-11:08:16.756 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 13.931 seconds (process running for 15.516)
-11:08:16.784 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-11:08:16.785 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-11:08:16.790 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:08:16.793 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-11:08:16.794 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-11:08:17.098 [RMI TCP Connection(7)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:08:17.144 [RMI TCP Connection(8)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-11:08:17.281 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:08:17.439 [RMI TCP Connection(8)-172.20.16.1] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@9b9b4e3
-11:08:17.453 [RMI TCP Connection(8)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-11:08:39.346 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:08:39.351 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:08:39.494 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-11:08:39.502 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
-11:08:47.901 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:08:48.010 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:48.011 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:48.011 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:08:48.955 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:08:48.986 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:48.987 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:48.987 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:08:54.923 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-11:08:58.836 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-11:08:59.056 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 14.465 seconds (process running for 16.322)
-11:08:59.083 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-11:08:59.084 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-11:08:59.088 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:08:59.092 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-11:08:59.094 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-11:08:59.102 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:08:59.111 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:09:18.585 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:09:18.655 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:18.655 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:18.656 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:09:19.358 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:09:19.374 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:19.375 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:19.375 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:09:22.136 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-11:09:22.137 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:09:22.137 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:09:22.254 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-11:09:23.503 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-11:09:25.940 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-11:09:26.298 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-11:09:26.475 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 11.368 seconds (process running for 12.948)
-11:09:26.491 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-11:09:26.491 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-11:09:26.493 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:09:26.495 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-11:09:26.496 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-11:09:26.549 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:09:26.612 [RMI TCP Connection(3)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:09:26.641 [RMI TCP Connection(4)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-11:09:26.845 [RMI TCP Connection(4)-172.20.16.1] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@51dab504
-11:09:26.849 [RMI TCP Connection(4)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-11:43:44.460 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:43:44.463 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:43:44.595 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-11:43:44.597 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
-11:45:39.430 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:45:39.498 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:39.498 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:39.499 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:45:40.192 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:45:40.215 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:40.215 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:40.215 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
-11:45:44.127 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
-11:45:44.127 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:45:44.128 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:45:44.290 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-11:45:46.500 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-11:45:50.707 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
-11:45:51.246 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.3.19:9281 register finished
-11:45:51.572 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 14.638 seconds (process running for 16.007)
-11:45:51.604 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
-11:45:51.606 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
-11:45:51.610 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:45:51.615 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
-11:45:51.617 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
-11:45:51.914 [RMI TCP Connection(11)-172.20.16.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-11:45:51.952 [RMI TCP Connection(10)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-11:45:52.255 [RMI TCP Connection(10)-172.20.16.1] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@5d3956f3
-11:45:52.259 [RMI TCP Connection(10)-172.20.16.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-11:46:01.647 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:54:41.336 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:54:41.338 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:54:41.469 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-11:54:41.475 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+20:45:55.985 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:45:56.059 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:56.059 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:56.059 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:45:56.629 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:45:56.642 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:56.642 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:56.642 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:45:58.994 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
+20:45:58.995 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:45:58.995 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:45:59.087 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:46:00.571 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:46:03.595 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
+20:46:03.964 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.10.1:9281 register finished
+20:46:04.156 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 10.5 seconds (process running for 11.974)
+20:46:04.174 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
+20:46:04.174 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
+20:46:04.182 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:46:04.185 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
+20:46:04.186 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
+20:46:04.569 [RMI TCP Connection(3)-192.168.3.19] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:46:04.598 [RMI TCP Connection(2)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+20:46:04.824 [RMI TCP Connection(2)-192.168.3.19] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6887f050
+20:46:04.838 [RMI TCP Connection(2)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+20:46:26.657 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:46:26.664 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:46:26.812 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+20:46:26.823 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+20:46:34.438 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:46:34.501 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:34.502 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:34.502 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:46:35.151 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:46:35.170 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:35.171 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:35.171 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:46:37.529 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
+20:46:37.530 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:46:37.530 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:46:37.624 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:46:39.179 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:46:43.383 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
+20:46:43.767 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.10.1:9281 register finished
+20:46:43.981 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 12.144 seconds (process running for 13.716)
+20:46:43.999 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
+20:46:44.000 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
+20:46:44.003 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:46:44.013 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
+20:46:44.014 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
+20:46:44.324 [RMI TCP Connection(4)-192.168.3.19] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:46:44.355 [RMI TCP Connection(3)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+20:46:44.554 [RMI TCP Connection(3)-192.168.3.19] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6806708e
+20:46:44.565 [RMI TCP Connection(3)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+20:54:13.101 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:54:13.104 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:54:13.229 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+20:54:13.234 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+20:54:19.650 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:54:19.710 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:19.711 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:19.711 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:54:20.273 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:54:20.287 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:20.288 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:20.288 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP] success
+20:54:22.581 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9281"]
+20:54:22.582 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:54:22.582 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:54:22.674 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:54:23.959 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:54:28.186 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9281"]
+20:54:28.654 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-auth 192.168.10.1:9281 register finished
+20:54:28.886 [main] INFO  i.y.a.YuluoMicroServiceAuthApplication - [logStarted,57] - Started YuluoMicroServiceAuthApplication in 11.447 seconds (process running for 12.647)
+20:54:28.906 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth, group=DEFAULT_GROUP
+20:54:28.907 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yaml, group=DEFAULT_GROUP
+20:54:28.909 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:54:28.917 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth.yml, group=DEFAULT_GROUP
+20:54:28.918 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-auth-dev.yaml, group=DEFAULT_GROUP
+20:54:29.218 [RMI TCP Connection(8)-192.168.3.19] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:54:29.245 [RMI TCP Connection(7)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+20:54:29.498 [RMI TCP Connection(7)-192.168.3.19] INFO  c.z.h.p.HikariPool - [checkFailFast,565] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6c65427e
+20:54:29.511 [RMI TCP Connection(7)-192.168.3.19] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+21:01:52.510 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+21:01:52.512 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+21:01:52.643 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+21:01:52.650 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.

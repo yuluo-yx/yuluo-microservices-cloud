@@ -1,100 +1,96 @@
-10:37:19.521 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-10:37:19.598 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:37:19.598 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:37:19.599 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-10:37:20.288 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-10:37:20.301 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:37:20.301 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-10:37:20.301 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-10:37:21.897 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
-10:37:21.898 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-10:37:21.898 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-10:37:23.420 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
-10:37:23.421 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
-10:37:24.563 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
-10:37:25.031 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
-10:37:25.498 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.3.19:9280 register finished
-10:37:25.559 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 7.92 seconds (process running for 8.86)
-10:37:25.574 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-10:37:25.575 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
-10:37:25.577 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
-10:37:25.578 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
-10:37:25.578 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
-10:38:15.678 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:08:00.248 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:08:00.253 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:08:12.457 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:08:12.558 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:12.558 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:12.559 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:08:14.161 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:08:14.180 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:14.180 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:08:14.180 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:08:16.381 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
-11:08:16.384 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:08:16.384 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:08:18.574 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
-11:08:18.575 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
-11:08:20.186 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
-11:08:20.808 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
-11:08:21.300 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.3.19:9280 register finished
-11:08:21.374 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 11.563 seconds (process running for 13.117)
-11:08:21.393 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:08:21.394 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
-11:08:21.402 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
-11:08:21.403 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
-11:08:21.404 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
-11:08:21.678 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:08:53.163 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:08:53.170 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:09:10.387 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:09:10.498 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:10.498 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:10.499 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:09:11.375 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:09:11.393 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:11.393 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:09:11.393 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:09:14.112 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
-11:09:14.113 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:09:14.114 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:09:16.630 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
-11:09:16.631 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
-11:09:18.526 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
-11:09:19.187 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
-11:09:19.772 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.3.19:9280 register finished
-11:09:19.852 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 12.091 seconds (process running for 13.403)
-11:09:19.871 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:09:19.872 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
-11:09:19.876 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
-11:09:19.877 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
-11:09:19.878 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
-11:09:20.608 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:43:46.436 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:43:46.439 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
-11:45:50.129 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
-11:45:50.227 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:50.227 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:50.228 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:45:51.231 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
-11:45:51.257 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:51.258 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
-11:45:51.258 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
-11:45:53.680 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
-11:45:53.683 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-11:45:53.683 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
-11:45:56.270 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
-11:45:56.271 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
-11:45:58.091 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
-11:45:58.614 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
-11:45:59.130 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.3.19:9280 register finished
-11:45:59.200 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 12.482 seconds (process running for 13.898)
-11:45:59.216 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
-11:45:59.217 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
-11:45:59.224 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
-11:45:59.225 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
-11:45:59.225 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
-11:45:59.839 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - [register,82] - Application registered itself as eb6544ee6289
-11:54:43.582 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
-11:54:43.584 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:45:33.918 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:45:33.980 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:33.980 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:33.980 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:45:34.565 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:45:34.576 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:34.576 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:45:34.576 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:45:36.376 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
+20:45:36.377 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:45:36.377 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:45:38.292 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
+20:45:38.293 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
+20:45:40.122 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
+20:45:40.823 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
+20:45:41.542 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.10.1:9280 register finished
+20:45:41.635 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 9.861 seconds (process running for 11.355)
+20:45:41.657 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:45:41.658 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
+20:45:41.661 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
+20:45:41.663 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
+20:45:41.664 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
+20:46:37.558 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:46:37.563 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:46:44.662 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:46:44.750 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:44.751 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:44.751 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:46:45.332 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:46:45.343 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:45.343 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:46:45.344 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:46:46.902 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
+20:46:46.903 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:46:46.903 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:46:48.640 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
+20:46:48.640 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
+20:46:50.057 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
+20:46:50.549 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
+20:46:51.058 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.10.1:9280 register finished
+20:46:51.129 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 8.643 seconds (process running for 10.291)
+20:46:51.146 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:46:51.147 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
+20:46:51.150 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
+20:46:51.151 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
+20:46:51.151 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
+20:49:10.041 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:49:10.049 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:49:16.249 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:49:16.306 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:49:16.306 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:49:16.307 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:49:16.819 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:49:16.828 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:49:16.829 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:49:16.829 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:49:18.267 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
+20:49:18.267 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:49:18.268 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:49:19.866 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
+20:49:19.867 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
+20:49:21.315 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
+20:49:21.766 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
+20:49:22.273 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.10.1:9280 register finished
+20:49:22.338 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 8.123 seconds (process running for 9.315)
+20:49:22.354 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:49:22.355 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
+20:49:22.357 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
+20:49:22.358 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
+20:49:22.358 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
+20:54:23.471 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+20:54:23.474 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+20:54:30.697 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 8.0.0.Final
+20:54:30.753 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:30.753 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:30.754 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:54:31.289 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStartupProfileInfo,636] - The following 1 profile is active: "dev"
+20:54:31.299 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:31.300 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP] success
+20:54:31.300 [main] INFO  c.a.c.n.c.NacosConfigDataLoader - [logTo,250] - [Nacos Config] Load config[dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP] success
+20:54:32.939 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9280"]
+20:54:32.940 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:54:32.940 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+20:54:34.576 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [initFallback,110] - [Sentinel SpringCloudGateway] using AnonymousBlockRequestHandler, responseStatus: 200, responseBody: {"code": 200,"message": "请求失败，稍后重试！"}
+20:54:34.577 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayFilter,143] - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
+20:54:36.322 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [sentinelGatewayBlockExceptionHandler,133] - [Sentinel SpringCloudGateway] register SentinelGatewayBlockExceptionHandler
+20:54:36.823 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9280"]
+20:54:37.341 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP yuluo-microservices-gateway 192.168.10.1:9280 register finished
+20:54:37.404 [main] INFO  i.y.g.YuluoMicroServicesGatewayApplication - [logStarted,57] - Started YuluoMicroServicesGatewayApplication in 8.785 seconds (process running for 10.087)
+20:54:37.420 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-common.yml, group=DEFAULT_GROUP
+20:54:37.421 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway, group=DEFAULT_GROUP
+20:54:37.423 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yml, group=DEFAULT_GROUP
+20:54:37.424 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway.yaml, group=DEFAULT_GROUP
+20:54:37.425 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=yuluo-microservices-gateway-dev.yaml, group=DEFAULT_GROUP
+21:01:54.677 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+21:01:54.682 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.

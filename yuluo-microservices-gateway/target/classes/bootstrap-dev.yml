@@ -11,6 +11,10 @@ spring:
         server-addr: 127.0.0.1:8848
         # 命名空间
         namespace: 0faa1b71-ce85-4de9-9f28-63fdc7f8ae0e
+        metadata:
+          version: 1.0.0
+          region: gansu
+
 
       # 服务配置
       config:

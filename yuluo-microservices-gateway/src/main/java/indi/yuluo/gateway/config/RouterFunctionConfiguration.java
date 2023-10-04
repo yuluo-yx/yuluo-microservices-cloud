@@ -28,8 +28,7 @@ public class RouterFunctionConfiguration {
 	 */
 	@SuppressWarnings("rawtypes")
 	@Bean
-	public RouterFunction routerFunction()
-	{
+	public RouterFunction routerFunction() {
 		return RouterFunctions.route(
 				RequestPredicates
 						.GET("/code")

@@ -3,28 +3,30 @@
 ![logo](./logo.png)
 
 ## 技术选型
-| 服务功能      | 技术选型                          | 主要作用                       |
-|-----------|-------------------------------|----------------------------|
-| 服务发现与配置中心 | Spring Cloud Alibaba Nacos    | 注册和发现服务，提供配置中心能力           |
-| 网关        | Spring Cloud GateWay          | 微服务网关，为服务提供安全隔离。提供服务唯一入口   |
-| RPC       | Spring Cloud Starter OpenFeign | 服务之间的RPC调用                 |
-| 数据存储      | MySQL/MongoDB                 | 数据存储服务                     |
-| 缓存数据库     | Redis                         | 提供缓存服务                     |
-| ORM框架     | Spring Data JPA/Mybatis-plus  | 提供ORM映射，连接数据库              |
-| MVC框架     | Spring MVC                    | 基于MVC设计模式的请求驱动类型的Web框架     |
-| 服务保护      | Spring Cloud Alibaba Sentinel | 高可用流控防护组件                  |
-| 前端        | Vite Vue3 TypeScript Pinia Element-plus SCSS Yarn | 构建前端项目                     |
-| 微服务框架     | Spring Cloud Alibaba/Spring Cloud | 微服务开发脚手架                   |
-| 分布式事务     | Spring Cloud Alibaba Seata    | 提供分布式事务支持                  |
-| 工具类       | Apache Commons-lang3/Hutool   | 提供辅助工具类支持                  |
-| 负载均衡      | Spring Cloud Loadbalancer     | 客户端负载均衡器                   |
-| 链路追踪      | io.micrometer.tracing + Zipkin | 提供服务链路监控支持                 |
-| 权限设计方案    | Spring Security / JWT         | 提供用户登录验证和Token颁发           |
-| 日志记录功能    | 基于AOP实现                       | 提供系统访问日志记录和关键操作记录          |
-| 接口文档      | Knif4j                        | 集成 Swagger，提供服务接口文档和接口请求测试 |
-| 服务监控框架    | Spring Boot Admin             | 实时监控服务状态，可视化展示             |
-| 数据脱敏      | 对关键属性进行过滤，例如电话号码，邮箱等          | 保护后台数据安全                   |
-| 后端代码风格    | 基于 Alibaba 规范                 | 代码更容易理解，可读性高               |
+
+| 服务功能           | 技术选型                                          | 主要作用                                         |
+|--------------------|---------------------------------------------------|--------------------------------------------------|
+| 服务发现与配置中心 | Spring Cloud Alibaba Nacos                        | 注册和发现服务，提供配置中心能力                 |
+| 网关               | Spring Cloud GateWay                              | 微服务网关，为服务提供安全隔离。提供服务唯一入口 |
+| RPC                | Spring Cloud Starter OpenFeign                    | 服务之间的 RP C调用                              |
+| 数据存储           | MySQL/MongoDB                                     | 数据存储服务                                     |
+| 缓存数据库         | Redis                                             | 提供缓存服务                                     |
+| ORM框架            | Spring Data JPA/Mybatis-plus                      | 提供 ORM 映射，连接数据库                        |
+| MVC框架            | Spring MVC                                        | 基于 MVC 设计模式的请求驱动类型的Web框架         |
+| 服务保护           | Spring Cloud Alibaba Sentinel                     | 高可用流控防护组件                               |
+| 前端               | Vite Vue3 TypeScript Pinia Element-plus SCSS Yarn | 构建前端项目                                     |
+| 微服务框架         | Spring Cloud Alibaba/Spring Cloud                 | 微服务开发脚手架                                 |
+| 分布式事务         | Spring Cloud Alibaba Seata                        | 提供分布式事务支持                               |
+| 工具类             | Apache Commons-lang3/Hutool                       | 提供辅助工具类支持                               |
+| 负载均衡           | Spring Cloud Loadbalancer                         | 客户端负载均衡器                                 |
+| 链路追踪           | io.micrometer.tracing + Zipkin                    | 提供服务链路监控支持                             |
+| 权限设计方案       | Spring Security / JWT                             | 提供用户登录验证和Token颁发                      |
+| 日志记录功能       | 基于AOP实现，支持 excel 导出功能                  | 提供系统访问日志记录和关键操作记录               |
+| 接口文档           | Knif4j                                            | 集成 Swagger，提供服务接口文档和接口请求测试     |
+| 服务监控框架       | Spring Boot Admin                                 | 实时监控服务状态，可视化展示                     |
+| 数据脱敏           | 对关键属性进行过滤，例如电话号码，邮箱等          | 保护后台数据安全                                 |
+| 后端代码风格       | 基于 Alibaba 规范                                 | 代码更容易理解，可读性高                         |
+
 
 ## 基本功能
 1. 用户登录与注册，用户邮箱验证登录
@@ -45,16 +47,17 @@
 |Seata| https://github.com/alibaba/Seata/releases     |
 
 ## 项目监控地址
-| 模块                   | 地址                                                                |
+
+| 模块                 | 地址                                                              |
 |----------------------|-------------------------------------------------------------------|
 | Spring Boot Admin    | http://localhost:8000                                             |
-| Spring Boot EndPoint | 查看服务控制台 mappings 映射                                               |
+| Spring Boot EndPoint | 查看服务控制台 mappings 映射                                      |
 | Nacos                | http://localhost:8848/nacos/                                      |
 | Sentinel             | http://127.0.0.1:8080/#/dashboard/home                            |
 | Zipkin               | http://localhost:9411/zipkin/                                     |
 | Knif4j               | http://${spring.cloud.nacos.discovery.ip}:${server.port}/doc.html |
-| Sql监控           | 整合 p6spy 输出完整 SQL 与执行时间监控                                         |
-| 前端项目                 | http://127.0.0.1:9000/login.html                                  |
+| Sql监控              | 整合 p6spy 输出完整 SQL 与执行时间监控                            |
+| 前端项目             | http://127.0.0.1:9000/login.html                                  |
 | Seata                | http://127.0.0.1:7091                                             |
 
 ## 代码结构
@@ -96,12 +99,12 @@
    发送对应请求，查看响应结果
 
 ## 优化方案
-| 模块功能    | 优化方案                           |
-|---------|--------------------------------|
-| RPC     | 使用 GRPC 替代 OpenFeign           |
-| 链路监控    | 使用 Apache SkyWalking 替代 ZipKin |
-| 单点登录    | 使用 Oauth2 加入单点登录功能             |
-| 权限设计    | 设计用户权限                         |、
-| Excel支持 | 支持日志数据库的导出操作                   ||
-| 文档      | 基于 VuePress 提供文档支持             |
-| 动态数据源配置 ||
+
+| 模块功能       | 优化方案                           |
+|----------------|------------------------------------|
+| RPC            | 使用 GRPC 替代 OpenFeign           |
+| 链路监控       | 使用 Apache SkyWalking 替代 ZipKin |
+| 单点登录       | 使用 Oauth2 加入单点登录功能       |
+| 权限设计       | 设计用户权限                       |
+| 文档           | 基于 VuePress 提供文档支持         |
+| 动态数据源配置 |                                    |
