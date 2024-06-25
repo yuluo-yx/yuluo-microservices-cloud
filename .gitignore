@@ -4,7 +4,8 @@
 *.factorypath
 
 # Log file
-*.log
+logs
+spy.log
 
 # BlueJ files
 *.ctxt
@@ -13,7 +14,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 *.zip
