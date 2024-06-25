@@ -108,3 +108,7 @@
 | 权限设计       | 设计用户权限                       |
 | 文档           | 基于 VuePress 提供文档支持         |
 | 动态数据源配置 |                                    |
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yuluo-yx/yuluo-microservices-cloud&type=Date)](https://star-history.com/#yuluo-yx/yuluo-microservices-cloud&Date)
